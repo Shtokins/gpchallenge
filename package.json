@@ -4,10 +4,6 @@
   "private": true,
   "homepage": "http://local.codestory.ru/",
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
     "antd": "^4.19.3",
     "babel-eslint": "^10.1.0",
     "currency-formatter": "^1.5.9",
@@ -16,8 +12,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
-    "throttle-debounce": "^3.0.1",
-    "web-vitals": "^2.1.0"
+    "throttle-debounce": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
