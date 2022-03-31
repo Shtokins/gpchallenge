@@ -40,6 +40,7 @@ const Cards = () => {
           rowKey="cardID"
           setFilters={setGridFilters}
           onRowClick={onRowClick}
+          pagination
         />
       </div>
     </div>
