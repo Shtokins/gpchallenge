@@ -44,7 +44,7 @@ const Card = () => {
       </div>
     </div>
   ) : (
-    <Alert message="Transaction not found" type="error" />
+    <Alert message="Card not found" type="error" />
   );
 };
 

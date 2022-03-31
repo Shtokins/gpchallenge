@@ -16,6 +16,11 @@ const Breadcrumbs = () => {
   };
 
   const { cardID, transactionID } = getUrlParams(pathname);
+  console.log(
+    "=== ==> Breadcrumbs ==> cardID, transactionID",
+    cardID,
+    transactionID
+  );
 
   useEffect(() => {
     const path = pathname.split("/");

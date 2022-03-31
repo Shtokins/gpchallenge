@@ -116,11 +116,15 @@ export const getBreadcrumbsFromPath = () => {
 };
 
 export const getUrlParams = pathname => {
+  let transactionID;
   let cardID = pathname.split(STATIC_BREADCRUMBS.cards.path + "/")[1];
   if (cardID) cardID = cardID.split("/")[0];
-  let transactionID = pathname.split(
+  const transactionIDPath = pathname.split(
     STATIC_BREADCRUMBS.transactions.path + "/"
   )[1];
-  if (transactionID) transactionID = transactionID.split("/")[0];
+  if (transactionIDPath) transactionID = transactionIDPath.split("/")[0];
+  if (transactionID && !cardID) {
+    cardID = transactionIDPath.split("/")[1];
+  }
   return { cardID, transactionID };
 };

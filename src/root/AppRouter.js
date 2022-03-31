@@ -30,6 +30,10 @@ const AppRouter = () => {
             path={`${STATIC_BREADCRUMBS.transactions.path}/:transactionID`}
             element={<Transaction />}
           />
+          <Route
+            path={`${STATIC_BREADCRUMBS.transactions.path}/:transactionID/:cardID`}
+            element={<Card />}
+          />
           <Route path={STATIC_BREADCRUMBS.cards.path} element={<Cards />} />
           <Route
             path={`${STATIC_BREADCRUMBS.cards.path}/:cardID`}
